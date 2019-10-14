@@ -1,0 +1,76 @@
+:root {
+  --aux-color: rgb(235, 235, 235);
+  --bk-xs: 576px;
+  --bk-sm: 768px;
+  --bk-md: 992px;
+  --bk-lg: 1200px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.d-flex {
+  display: flex;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.col {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.hidden {
+  display: none;
+}
+button {
+  font-size: 0.9em;
+  cursor: pointer;
+  border: 2px solid var(--aux-color);
+  background: var(--aux-color);
+  padding: 0.25em 0.5em;
+}
+button:hover {
+  filter: brightness(0.95);
+}
+input {
+  min-width: 0;
+  padding: 6px 8px;
+  font-size: 0.9em;
+  border: 1px solid var(--aux-color);
+}
+
+.one-line-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
